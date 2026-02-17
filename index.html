@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohanish Venkatesh | Futuristic Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#top">MOHANISH//LAB</a>
+      <nav class="main-nav">
+        <a href="#bio">Bio</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="tempo-console" aria-label="Animation tempo control">
+    <label for="bpm-slider">Boogie BPM <output id="bpm-value" for="bpm-slider">118 BPM</output></label>
+    <input id="bpm-slider" type="range" min="80" max="180" step="1" value="118" />
+  </div>
+
+  <main id="top">
+    <section class="hero container reveal" data-delay="0">
+      <div class="hero-copy">
+        <p class="kicker">Neon Enterprise Engineering</p>
+        <h1>Futuristic Java platforms with artistic precision and production power.</h1>
+        <p>
+          I build cloud-native backend systems that move fast, scale hard, and stay stable under enterprise pressure. This portfolio is designed like a live stage: technical, kinetic, and unmistakable.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary boogie" href="#contact">Start a Build</a>
+          <a class="btn btn-secondary boogie" href="Mohanish_CV_V4.docx">Download CV</a>
+          <button class="btn btn-ghost boogie popup-trigger" data-popup="manifesto" type="button">Open Manifesto</button>
+        </div>
+      </div>
+      <div class="hero-stage" aria-hidden="true">
+        <div class="orbital orbital-1"></div>
+        <div class="orbital orbital-2"></div>
+        <div class="core">JAVA</div>
+        <div class="tag t1">SPRING</div>
+        <div class="tag t2">OCI</div>
+        <div class="tag t3">REST</div>
+        <div class="tag t4">PL/SQL</div>
+      </div>
+    </section>
+
+    <section class="ticker reveal" data-delay="0.05" aria-label="Skills ticker">
+      <div class="ticker-track">
+        <span>Microservices</span><span>Oracle 21c</span><span>Spring Boot</span><span>Security</span><span>REST + SOAP</span><span>Maven</span><span>Tomcat</span><span>PL/SQL</span>
+        <span>Microservices</span><span>Oracle 21c</span><span>Spring Boot</span><span>Security</span><span>REST + SOAP</span><span>Maven</span><span>Tomcat</span><span>PL/SQL</span>
+      </div>
+    </section>
+
+    <section id="bio" class="container section reveal" data-delay="0.1">
+      <h2>Bio Signal</h2>
+      <div class="glass-panel">
+        <p>
+          Backend engineer with 3+ years in banking and healthcare platforms. I specialize in building resilient Java architectures, integrating strict enterprise workflows, and translating complex system needs into reliable delivery.
+        </p>
+        <div class="stats-grid">
+          <article>
+            <strong class="counter" data-target="3">0</strong>
+            <span>Years in enterprise backend delivery</span>
+          </article>
+          <article>
+            <strong>OCI</strong>
+            <span>Developer and architect certification path</span>
+          </article>
+          <article>
+            <strong class="counter" data-target="4">0</strong>
+            <span>Core platforms delivered end-to-end</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="container section reveal" data-delay="0.15">
+      <h2>Live Timeline</h2>
+      <div class="timeline-grid">
+        <article class="timeline-card boogie-soft">
+          <p class="when">Sep 2022 - Present</p>
+          <h3>Java Backend Developer | Al Tomouh IT</h3>
+          <p>Leading backend delivery and support across CMS, CCMS, and PCR for banking-grade operations and stakeholder-heavy release cycles.</p>
+        </article>
+        <article class="timeline-card boogie-soft">
+          <p class="when">Jan 2022 - Sep 2022</p>
+          <h3>DB / Java Backend Developer | Petadart</h3>
+          <p>Built PL/SQL-centric services, integrated PKI and payment systems, and deployed Oracle-backed Java applications.</p>
+        </article>
+        <article class="timeline-card boogie-soft">
+          <p class="when">Mar 2021 - Dec 2021</p>
+          <h3>Insurance + HIMS Delivery</h3>
+          <p>Delivered SDLC features with Spring, Hibernate, Oracle/MySQL, and controlled deployment pipelines through Tomcat.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container section reveal" data-delay="0.2">
+      <h2>Capability Matrix</h2>
+      <div class="matrix-grid">
+        <article class="matrix-card tilt">
+          <h3>Cloud and Data</h3>
+          <p>Oracle OCI, Oracle 21c/19c/12c, MySQL, SQL Developer, PL/SQL</p>
+        </article>
+        <article class="matrix-card tilt">
+          <h3>Backend</h3>
+          <p>Java, Spring Boot, Spring MVC, Spring Data, Spring Security, Hibernate</p>
+        </article>
+        <article class="matrix-card tilt">
+          <h3>Integration</h3>
+          <p>REST, SOAP, PKI, ePayment, LDAP, Exchange Mail, SMS gateways</p>
+        </article>
+        <article class="matrix-card tilt">
+          <h3>Delivery</h3>
+          <p>Maven, JUnit, Postman, Eclipse, IntelliJ IDEA, Tomcat, WebLogic</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="container section reveal" data-delay="0.25">
+      <h2>Project Gallery</h2>
+      <div class="projects-grid">
+        <article class="project-card tilt">
+          <p class="project-type">Enterprise</p>
+          <h3>Case Management System</h3>
+          <p>Secure workflow engines, validation-heavy APIs, and production lifecycle ownership.</p>
+          <button class="chip popup-trigger" data-popup="cms" type="button">Open Story</button>
+        </article>
+        <article class="project-card tilt">
+          <p class="project-type">Customer Systems</p>
+          <h3>CCMS Platform</h3>
+          <p>Service-first architecture and optimized incident handling for reliable client operations.</p>
+          <button class="chip popup-trigger" data-popup="ccms" type="button">Open Story</button>
+        </article>
+        <article class="project-card tilt">
+          <p class="project-type">Healthcare</p>
+          <h3>PCR + HIMS Systems</h3>
+          <p>Transaction-safe healthcare modules built with stable persistence and disciplined deployments.</p>
+          <button class="chip popup-trigger" data-popup="hims" type="button">Open Story</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container section reveal" data-delay="0.3">
+      <h2>Contact Node</h2>
+      <div class="contact-shell">
+        <p><strong>Email:</strong> <a href="mailto:vmohanish2000@hotmail.com">vmohanish2000@hotmail.com</a></p>
+        <p><strong>Mobile:</strong> <a href="tel:+917397258146">+91 73972 58146</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/917397258146" target="_blank" rel="noreferrer">Start Chat</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>2026 Mohanish Venkatesh | Futuristic Java Cloud Portfolio</p>
+    </div>
+  </footer>
+
+  <div class="popup-backdrop" id="popup-backdrop" aria-hidden="true">
+    <div class="popup-card" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+      <button class="popup-close" id="popup-close" type="button">Close</button>
+      <p class="popup-kicker" id="popup-kicker">Signal</p>
+      <h3 id="popup-title">Title</h3>
+      <p id="popup-text">Details</p>
+      <div class="popup-tags" id="popup-tags"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
