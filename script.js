@@ -111,7 +111,7 @@ const counterObserver = new IntersectionObserver(
 
       function tick(now) {
         const progress = Math.min((now - start) / duration, 1);
-        el.textContent = `${Math.floor(progress * target)}+`;
+        el.textContent = `${Math.floor(progress * target)}`;
         if (progress < 1) requestAnimationFrame(tick);
       }
 
