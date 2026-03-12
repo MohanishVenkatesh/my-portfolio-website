@@ -1,4 +1,4 @@
-const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+﻿const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const root = document.documentElement;
 const bpmSlider = document.getElementById("bpm-slider");
 const bpmValue = document.getElementById("bpm-value");
@@ -98,75 +98,6 @@ if (!reduceMotion) {
   });
 }
 
-const popupBackdrop = document.getElementById("popup-backdrop");
-const popupClose = document.getElementById("popup-close");
-const popupKicker = document.getElementById("popup-kicker");
-const popupTitle = document.getElementById("popup-title");
-const popupText = document.getElementById("popup-text");
-const popupTags = document.getElementById("popup-tags");
-
-const popupData = {
-  manifesto: {
-    kicker: "Manifesto",
-    title: "Code With Rhythm",
-    text: "I design backend architecture like a performance system: reliable timing, expressive structure, and zero compromise on delivery quality.",
-    tags: ["Architecture", "Reliability", "Delivery", "Futurism"]
-  },
-  cms: {
-    kicker: "Enterprise",
-    title: "Case Management System",
-    text: "Engineered validation-heavy backend flows, protected processing chains, and stable release support for operational teams.",
-    tags: ["Spring Boot", "Oracle", "REST", "Production"]
-  },
-  ccms: {
-    kicker: "Customer Systems",
-    title: "CCMS Platform",
-    text: "Built service-centric backend modules and optimized incident operations with enterprise-grade reliability goals.",
-    tags: ["Java", "PL/SQL", "Tomcat", "Integrations"]
-  },
-  hims: {
-    kicker: "Healthcare",
-    title: "PCR + HIMS Systems",
-    text: "Delivered transaction-safe healthcare services with robust persistence layers and disciplined deployment execution.",
-    tags: ["Hibernate", "MySQL", "JUnit", "Maven"]
-  }
-};
-
-function openPopup(key) {
-  const data = popupData[key];
-  if (!data) return;
-
-  popupKicker.textContent = data.kicker;
-  popupTitle.textContent = data.title;
-  popupText.textContent = data.text;
-  popupTags.innerHTML = data.tags.map((tag) => `<span>${tag}</span>`).join("");
-
-  popupBackdrop.classList.add("open");
-  popupBackdrop.setAttribute("aria-hidden", "false");
-}
-
-function closePopup() {
-  popupBackdrop.classList.remove("open");
-  popupBackdrop.setAttribute("aria-hidden", "true");
-}
-
-document.querySelectorAll(".popup-trigger").forEach((button) => {
-  button.addEventListener("click", () => openPopup(button.dataset.popup));
-});
-
-popupClose.addEventListener("click", closePopup);
-popupBackdrop.addEventListener("click", (event) => {
-  if (event.target === popupBackdrop) closePopup();
-});
-
-window.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") closePopup();
-});
-
-if (!reduceMotion) {
-  setTimeout(() => openPopup("manifesto"), 900);
-}
-
 const counters = document.querySelectorAll(".counter");
 const counterObserver = new IntersectionObserver(
   (entries) => {
@@ -192,3 +123,4 @@ const counterObserver = new IntersectionObserver(
 );
 
 counters.forEach((counter) => counterObserver.observe(counter));
+
